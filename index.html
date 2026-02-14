@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A cute Valentine's Day page to ask someone to be your Valentine!">
   <meta name="theme-color" content="#ffd0e5">
-  <title>Valentine's Day</title>
+  <title>it's for you </title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   <style>
@@ -31,25 +31,25 @@
     }
   </style>
   <!-- Preload images so transitions feel instant -->
-  <link rel="preload" as="image" href="./images/image1.gif">
-  <link rel="preload" as="image" href="./images/image2.gif">
-  <link rel="preload" as="image" href="./images/image3.gif">
-  <link rel="preload" as="image" href="./images/image4.gif">
-  <link rel="preload" as="image" href="./images/image5.gif">
-  <link rel="preload" as="image" href="./images/image6.gif">
-  <link rel="preload" as="image" href="./images/image7.gif">
+  <link rel="preload" as="image" href="./image1.gif">
+  <link rel="preload" as="image" href="./image2.gif">
+  <link rel="preload" as="image" href="./image3.gif">
+  <link rel="preload" as="image" href="./image4.gif">
+  <link rel="preload" as="image" href="./image5.gif">
+  <link rel="preload" as="image" href="./image6.gif">
+  <link rel="preload" as="image" href="./image7.gif">
 </head>
 <body class="gradient-background">
   <main class="flex items-center justify-center h-screen">
     <section class="flex flex-col items-center p-4">
       <img
         id="imageDisplay"
-        src="./images/image1.gif"
+        src="./image1.gif"
         alt="Cute kitten with flowers"
         class="rounded-md h-[300px] object-cover"
       />
       <h1 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">
-        Will you be my Valentine Abbbbouraaa  ??
+        Will you be my Valentine Mehdi ?????
       </h1>
       <div id="responseButtons" class="flex gap-4 pt-5 items-center">
         <button
@@ -83,20 +83,20 @@
       const MAX_NO_CLICKS = 5;
 
       const IMAGE_PATHS = [
-        './images/image1.gif',
-        './images/image2.gif',
-        './images/image3.gif',
-        './images/image4.gif',
-        './images/image5.gif',
-        './images/image6.gif',
-        './images/image7.gif',
+        './image1.gif',
+        './image2.gif',
+        './image3.gif',
+        './image4.gif',
+        './image5.gif',
+        './image6.gif',
+        './image7.gif',
       ];
 
       const NO_BUTTON_MESSAGES = [
         'No',
-        'Are you sure guerda  ?',
-        'brabi  please',
-        "Don't do this to me bbibi :(",
+        'no ? Are you sure mehdi   ?',
+        'MEHDOUCHH please',
+        "Don't do this to me handsome  :(",
         "You're breaking my heart wlh ",
         "I'm gonna cry zah ...",
       ];
@@ -142,7 +142,7 @@
       yesButton.addEventListener('click', () => {
         imageDisplay.src = IMAGE_PATHS[IMAGE_PATHS.length - 1];
         imageDisplay.alt = ALT_TEXTS[ALT_TEXTS.length - 1];
-        valentineQuestion.textContent = ' yaaaaaaa jaw  behiyeeee ???!! :3';
+        valentineQuestion.textContent = ' YEEEEEYYY mr so when are you free for a date !! :3';
         responseButtons.style.display = 'none';
 
         // Heart-shaped confetti for a valentine theme
@@ -160,3 +160,4 @@
   </script>
 </body>
 </html>
+
